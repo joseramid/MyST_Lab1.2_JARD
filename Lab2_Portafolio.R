@@ -27,7 +27,7 @@ Bajar_Precios <- function(Columns, Tickers, Fecha_In, Fecha_Fn) {
 #Tambien hay que checar bien la API key.
 
 #Aqui creamos los argumentos que se necesitan para la funcion que creamos
-tk <- c("TSLA", "BBY","HD") #tickers #con la 'c' le dices que es un vector
+tk <- c("AMZN","MSFT","AAPL") #tickers #con la 'c' le dices que es un vector
 cs <- c("date","adj_close") #columnas que necesitas
 fs <- c("2015-08-01","2016-08-01") #fechas a obtener
 
@@ -110,7 +110,7 @@ df_Portafolios <- data.frame(matrix(nrow = length(Port1$random_portfolio_objecti
 colnames(df_Portafolios) <- c("Rend","Var","Clase")
 #Edita el nombre de las columnas.
 
-Capital_Inicial <- 10000
+Capital_Inicial <- 100000
 
 for(i in i:length(Port1$random_portfolio_objective_results)) {
   #Aqui estamos haciendo las medias anuales, porque estaban diarias.
