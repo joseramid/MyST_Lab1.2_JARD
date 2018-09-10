@@ -1,5 +1,5 @@
 ## MyST_Lab2_JARD
-# Laboratorio 2
+# Laboratorio 1.2
 
 En el portafolio que se eligió, se observaron muy malos rendimientos, sugiriendo asi puros portafolios con rendimientos negativos.
 Si bien en la práctica un portafolio como el que se realizó no sería un producto factible, si pudimos observar las supuestas variaciones en el capital inicial.
