@@ -46,6 +46,11 @@ names(Datos) <- tk
 #con 'names' cambiamos los nombres de las columnas por lo que quieras, en este caso
 #por los tickers.
 
+#Cambiamos el orden de los datos que previamente descargamos para calcular bien los rends
+for(i in 1:length(tk)){
+  Datos[[i]]<-Datos[[i]][order(Datos[[i]][,1]), ]
+}
+
 for(i in 1:length(tk)){
   Datos[[i]]$adj_close_r <- c(0, diff(log(Datos[[i]]$adj_close)))
 }
